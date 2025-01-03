@@ -1,12 +1,13 @@
 /* General container styling */
 .container {
-    width: 1200px;
+    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
     box-sizing: border-box;
 }
 
-/* Reset some basic styling */
+/* Reset basic styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -32,7 +33,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -74,6 +75,7 @@ body {
 .page-selector {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap; /* Wrap links on smaller screens */
 }
 
 .page-selector a {
@@ -108,9 +110,10 @@ footer {
 }
 
 .footer-container {
-    width: 1200px;
+    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 /* Responsive design */
@@ -118,6 +121,7 @@ footer {
     .header-container {
         flex-direction: column;
         align-items: center;
+        padding: 10px 15px;
     }
 
     .header-text h1 {
@@ -128,7 +132,20 @@ footer {
         font-size: 0.9rem;
     }
 
-    .page-selector a {
-        margin: 0 10px;
+    .page-selector {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
     }
 }
