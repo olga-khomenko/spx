@@ -1,0 +1,134 @@
+/* General container styling */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Reset some basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333333;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+.main-header {
+    background-color: #363d47;
+    color: #d9ba8c;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 80px;
+    margin: 0;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-text h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.header-text p {
+    margin: 0 0 10px;
+    font-size: 1rem;
+}
+
+/* Sub-header styling */
+.sub-header {
+    background-color: #F8F8F8;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sub-header-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.page-selector {
+    display: flex;
+    gap: 15px;
+}
+
+.page-selector a {
+    text-decoration: none;
+    color: #577aa2;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.page-selector a.active {
+    text-decoration: underline;
+}
+
+.page-selector a:hover {
+    color: #F79256;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #F8F8F8;
+}
+
+/* Footer styling */
+footer {
+    background-color: #363d47;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-text p {
+        font-size: 0.9rem;
+    }
+
+    .page-selector a {
+        margin: 0 10px;
+    }
+}
